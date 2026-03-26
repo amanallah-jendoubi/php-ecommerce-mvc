@@ -17,14 +17,14 @@ HeartList.forEach((itm)=>{
 //hoisting 
 function renderRedHeart(elem){
     const html=`
-        <img class="js-red-heart absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/red-heart.png" alt="">
+        <img class="js-red-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/red-heart.png" alt="">
     `
     elem.innerHTML=html;
 }
 
 function renderWhiteHeart(elem){
     const html=`
-        <img class="js-white-heart absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
     `
     elem.innerHTML=html;
 }

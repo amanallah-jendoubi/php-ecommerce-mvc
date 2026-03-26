@@ -74,30 +74,13 @@
                 <div class="w-4 mr-2 bg-[#DB4444]"></div>
                 <h3 class="text-[#DB4444] font-bold text-xl ">Todays</h3>
             </div>
-            <h2 class="text-2xl font-bold mb-5">Flash Sales</h2>         <!--Horizontal scroll-->
-            <div class="flex w-[100%] mx-auto justify-around">
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
-                        <img class="max-w-[100%] object-cover mx-auto" src="./resources//coat.png" alt="">
-                        <img class=" absolute top-[3%] right-[2%] md:w-6 md:h-6 h-4 w-4" src="./resources/whitre-heart.png" alt="">
-                    </div>
-                    <h3>The north coat</h3>
-                    <div class="flex">
-                        <p class="mr-4">$260</p>
-                        <p class="text-gray-500 line-through">$360</p>
-                    </div>
-                    <div>
-                        <div class="flex gap-x-1">
-                            <img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt="">
-                        </div>
-                        <p>(65)</p>
-                    </div>
-                </div>
-                <div class="w-[20%]">
+            <h2 class="text-2xl font-bold mb-5">Flash Sales</h2>         
+            <div class="flex overflow-x-auto gap-3">            <!--Horizontal scroll-->
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
                     <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
                         <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
                         <div class="js-heart">
-                        <img class="js-white-heart absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
                         </div>
                     </div>
                     <h3>Gucci duffle bag</h3>
@@ -112,12 +95,14 @@
                         <p>(65)</p>
                     </div>
                 </div>
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50">
-                        <img  class="max-w-[100%] object-cover mx-auto" src="./resources//coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
+                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
+                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
+                        <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        </div>
                     </div>
-                    <h3>RGB liquid CPU Cooler</h3>
+                    <h3>Gucci duffle bag</h3>
                     <div class="flex">
                         <p class="mr-4">$260</p>
                         <p class="text-gray-500 line-through">$360</p>
@@ -129,12 +114,14 @@
                         <p>(65)</p>
                     </div>
                 </div>
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50">
-                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources/coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
+                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
+                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
+                        <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        </div>
                     </div>
-                    <h3>Small BookSelf</h3>
+                    <h3>Gucci duffle bag</h3>
                     <div class="flex">
                         <p class="mr-4">$260</p>
                         <p class="text-gray-500 line-through">$360</p>
@@ -146,6 +133,7 @@
                         <p>(65)</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -156,28 +144,13 @@
                 <h3 class="text-[#DB4444] font-bold text-xl ">This Month</h3>
             </div>
             <h2 class="text-2xl font-bold mb-5">Best Selling Products</h2>         <!--Horizontal scroll-->
-            <div class="flex w-[100%] mx-auto justify-around">
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
-                        <img class="max-w-[100%] object-cover mx-auto" src="./resources//coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] md:w-6 md:h-6 h-4 w-4" src="./resources/whitre-heart.png" alt="">
-                    </div>
-                    <h3>The north coat</h3>
-                    <div class="flex">
-                        <p class="mr-4">$260</p>
-                        <p class="text-gray-500 line-through">$360</p>
-                    </div>
-                    <div>
-                        <div class="flex gap-x-1">
-                            <img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt=""><img src="./resources/fullStar.png" alt="">
-                        </div>
-                        <p>(65)</p>
-                    </div>
-                </div>
-                <div class="w-[20%]">
+            <div class="flex overflow-x-auto gap-3">            <!--Horizontal scroll-->
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
                     <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
                         <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        </div>
                     </div>
                     <h3>Gucci duffle bag</h3>
                     <div class="flex">
@@ -191,12 +164,14 @@
                         <p>(65)</p>
                     </div>
                 </div>
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50">
-                        <img  class="max-w-[100%] object-cover mx-auto" src="./resources//coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
+                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
+                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
+                        <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        </div>
                     </div>
-                    <h3>RGB liquid CPU Cooler</h3>
+                    <h3>Gucci duffle bag</h3>
                     <div class="flex">
                         <p class="mr-4">$260</p>
                         <p class="text-gray-500 line-through">$360</p>
@@ -208,12 +183,14 @@
                         <p>(65)</p>
                     </div>
                 </div>
-                <div class="w-[20%]">
-                    <div class="relative w-[100%] mx-auto bg-gray-50">
-                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources/coat.png" alt="">
-                        <img class="absolute top-[3%] right-[2%] h-4 w-4 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                <div class="shrink-0 basis-[90%] md:basis-[45%]">
+                    <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
+                        <img class="max-w-[100%] object-cover mx-auto"  src="./resources//coat.png" alt="">
+                        <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="./resources/whitre-heart.png" alt="">
+                        </div>
                     </div>
-                    <h3>Small BookSelf</h3>
+                    <h3>Gucci duffle bag</h3>
                     <div class="flex">
                         <p class="mr-4">$260</p>
                         <p class="text-gray-500 line-through">$360</p>
@@ -225,6 +202,7 @@
                         <p>(65)</p>
                     </div>
                 </div>
+
             </div>
         </section>
         <?php include 'footer-service.php'?>

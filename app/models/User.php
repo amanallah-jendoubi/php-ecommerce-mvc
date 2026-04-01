@@ -36,7 +36,6 @@ class User{
     public function setRole($role) {
         $this->role = $role;
     }
-
     public function findUser($email,$password){
         $query = "SELECT role, password FROM user WHERE email = ?";
         $res = $this->query($query, [$email]);
@@ -50,6 +49,5 @@ class User{
         else{
             return false;
         }
-
-}
+    }
 }

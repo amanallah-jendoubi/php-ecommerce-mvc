@@ -20,6 +20,7 @@ class Controller{
     public function view($name,$data=[]){
         $path=$this->identifyUser();
         extract($path);
+        extract($data);
         $fileName="../app/views/".$name . ".view.php";
         if (file_exists($fileName)){
             require $fileName;

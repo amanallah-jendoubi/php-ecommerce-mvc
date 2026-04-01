@@ -22,22 +22,21 @@ trait Model{
     }
 
 
-public function update($id, $data, $id_column) {
-    $keys=array_keys($data);
-    $query = "UPDATE " . $this->table . " SET ";
+    public function update( $id_column,$id,$data,$table) {
+        $keys=array_keys($data);
+        $query = "UPDATE ". $table." SET ";
+        foreach ($keys as $key) {
+            $query .=( $key . " = ?, ");
+        }
 
-    foreach ($keys as $key) {
-        $query .= $key . " = ?, ";
+        $query = substr($query, 0, -2); // removing last ", "
+
+        $query .= " WHERE " . $id_column . " = ?"; 
+
+        $values   = array_values($data); 
+        $values[] = $id;  //append id to values given to the query              
+        $this->query($query, $values);
     }
-
-    $query = substr($query, 0, -2); // removing last ", "
-
-    $query .= " WHERE " . $id_column . " = ?"; 
-
-    $values   = array_values($data); 
-    $values[] = $id;                
-    $this->query($query, $values);
-}
 
 
 

@@ -22,6 +22,7 @@ class SignUp extends Controller{
                 $user->insert(['name'=>$user->getName(),'password'=>$user->getPassword() , 'role'=>'user' ,'email'=>$user->getEmail()],'user');
                 $_SESSION['email']=$user->getEmail();
                 $_SESSION['role']=$user->getRole();
+                $_SESSION['name']=$user->getName();
                 header("Location:". ROOT ."/home");
                 exit;
             }

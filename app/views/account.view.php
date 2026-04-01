@@ -20,6 +20,7 @@
 <body>
 
     <?php 
+ 
     include 'header.view.php';
     ?>
     <main>
@@ -42,7 +43,7 @@
                     </div>      
                     <div class="flex flex-col mb-3 ">
                         <label class="mb-1 font-medium" for="pass">Current Password</label>
-                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='password' id="pass" value="<?php echo (isset($old['password']) ? $old['password'] : '')?>">
+                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='currpassword' id="pass" value="<?php echo (isset($old['currpassword']) ? $old['currpassword'] : '')?>">
                         <?php 
                             if(isset($errors['password'])){
                                 echo "<p class='text-red-600'>".$errors['password']."</p>";
@@ -50,8 +51,8 @@
                         ?>                
                     </div> 
                     <div class="flex flex-col mb-3 ">
-                        <label class="mb-1 font-medium" for="pass">New Password</label>
-                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='password' id="pass" value="<?php echo (isset($old['password']) ? $old['password'] : '')?>">
+                        <label class="mb-1 font-medium" for="new">New Password</label>
+                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='newpassword' id="new" value="<?php echo (isset($old['newpassword']) ? $old['newpassword'] : '')?>">
                         <?php 
                             if(isset($errors['password'])){
                                 echo "<p class='text-red-600'>".$errors['password']."</p>";
@@ -59,8 +60,8 @@
                         ?>                
                     </div> 
                     <div class="flex flex-col mb-3 ">
-                        <label class="mb-1 font-medium" for="pass">Confirm New Password</label>
-                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='password' id="pass" value="<?php echo (isset($old['password']) ? $old['password'] : '')?>">
+                        <label class="mb-1 font-medium" for="confirm">Confirm New Password</label>
+                        <input class="focus:outline-none ring-1 <?php echo  (isset($errors['password'])) ? 'ring-red-500' : 'ring-orange-500'; ?> p-2  rounded-lg focus:bg-orange-50" type="password" name='confirmpassword' id="confirm" value="<?php echo (isset($old['confirmpassword']) ? $old['confirmpassword'] : '')?>">
                         <?php 
                             if(isset($errors['password'])){
                                 echo "<p class='text-red-600'>".$errors['password']."</p>";

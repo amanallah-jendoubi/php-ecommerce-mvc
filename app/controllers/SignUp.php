@@ -12,7 +12,7 @@ class SignUp extends Controller{
             $user->setName($_POST['name']);
             $user->setEmail($_POST['email']);
             $user->setPassword(password_hash($_POST['password'],PASSWORD_BCRYPT));//store hashed password
-            $user->setRole('user');    
+            $user->setRole('user');    //defaulted to user
             $found=$user->findById('email', $user->getEmail(),'user');  
             if($found){//user already stored in database
                 $errors['email']='Invalid Email';
@@ -20,7 +20,6 @@ class SignUp extends Controller{
             }
             else{//valid email
                 $user->insert(['name'=>$user->getName(),'password'=>$user->getPassword() , 'role'=>'user' ,'email'=>$user->getEmail()],'user');
-                session_start();
                 $_SESSION['email']=$user->getEmail();
                 $_SESSION['role']=$user->getRole();
                 header("Location:". ROOT ."/home");

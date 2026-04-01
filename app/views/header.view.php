@@ -1,4 +1,4 @@
-    <header class="mb-12">
+   <header class="mb-12">
         <p class="bg-black  text-slate-200 py-6 font-mono text-base text-center">
         Winter Sale And Free Express Delivery
         <span class="block font-semibold sm:inline " > OFF 50%!</span>
@@ -20,13 +20,13 @@
                 </label>
                 <div class="flex justify-center items-center">
                         <a  class="js-cart-link relative p-2 mr-2" href="cart"><img src="<?php echo ROOT ?>/assets/resources/Cart1 with buy.png" alt="shop"><div class="js-cart-counter hidden absolute rounded-full bg-orange-500 text-white w-5 h-5 top-0 right-0"></div></a>
-                    <?php if(!empty($data)):?>
+                    <?php if(!empty($path)):?>
                         <div class="relative">
-                            <img class="js-account w-9 h-9" src="<?php echo $path?>" alt="">
+                            <img class="js-account w-9 h-9" src="<?php echo $path ?>" alt="">
                             <div class="js-account-drop-down hidden absolute right-0 top-10 bg-white shadow-lg rounded-lg w-48 pb-3 z-50">
                                 <div class="flex mb-2 mouse:hover:bg-gray-100 hover:cursor-pointer py-1">
                                     <img class="mr-1 w-8 h-8" src="<?php echo ROOT ?>/assets/resources/manage-account.png" alt="">
-                                    <a href="logout.php" class="">My Account</p>
+                                    <a href="<?php echo ROOT?>/account" class="">My Account</a>
                                 </div>
                                 <div class="flex mb-2 mouse:hover:bg-gray-100 hover:cursor-pointer py-1">
                                     <img class="mr-1 w-8 h-8" src="<?php echo ROOT ?>/assets/resources/order.png" alt="">

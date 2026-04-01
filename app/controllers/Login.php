@@ -15,14 +15,18 @@ class Login extends Controller{
                 $found=$user->findUser($user->getEmail(),$user->getPassword());
                 if($found){
                     session_start();
+                    $_SESSION['email']=$user->getEmail();
+                    $_SESSION['role']=$user->getRole();
                     if($user->getRole()=='admin'){
                         $_SESSION['role']='admin';
+                        header('location:'.ROOT.'/adminSpace');
+                        exit;
                     }
                     else{//it's a normal user
                         $_SESSION['role']='user';
+                        header('location:'.ROOT.'/home');
+                        exit;
                     }
-                    header('location:'.ROOT.'/home');
-                    exit;
                 }
                 else{
                     $errors['credentials']='Please verify your credentials';

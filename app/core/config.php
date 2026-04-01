@@ -3,6 +3,8 @@
 
 if ($_SERVER['SERVER_NAME']=='localhost'){//local variable
     define ('ROOT','http://localhost//E-Commerce-Website/public'); 
+    define ('ROOT_SERVER','http://localhost//E-Commerce-Website/app'); 
+
     /*DB configuration*/
     define ('DBNAME','exclusive');
     define('DBHOST','localhost');

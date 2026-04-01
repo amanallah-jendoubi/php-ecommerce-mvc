@@ -20,6 +20,9 @@ class SignUp extends Controller{
             }
             else{//valid email
                 $user->insert(['name'=>$user->getName(),'password'=>$user->getPassword() , 'role'=>'user' ,'email'=>$user->getEmail()],'user');
+                session_start();
+                $_SESSION['email']=$user->getEmail();
+                $_SESSION['role']=$user->getRole();
                 header("Location:". ROOT ."/home");
                 exit;
             }

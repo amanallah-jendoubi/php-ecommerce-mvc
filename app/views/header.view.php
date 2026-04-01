@@ -8,10 +8,10 @@
                 <h2 class="font-bold text-3xl my-3 md:pt-1 lg:pt-1 lg:text-4xl">Exclusive</h2>
                 <nav class="my-3 hidden md:block">
                     <ul class="flex justify-center">
-                        <a href="home"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Home</li></a>
-                        <a href="contact"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Contact</li></a>
-                        <a href="signUp"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Sign Up</li></a>
-                        <a href="about"><li class="m-4  mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">About</li></a>
+                        <a href="<?php echo ROOT?>/home"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Home</li></a>
+                        <a href="<?php echo ROOT?>/contact"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Contact</li></a>
+                        <a href="<?php echo ROOT?>/signUP"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Sign Up</li></a>
+                        <a href="<?php echo ROOT?>/about"><li class="m-4  mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">About</li></a>
                     </ul>
                 </nav>
                 <label class="relative sm:flex sm:items-center sm: hidden w-[40%] md:w-[30%] lg:w-[40%]">
@@ -47,10 +47,10 @@
             </label>
             <nav class="my-3 md:hidden">
                 <ul class="flex justify-center">
-                    <a href="home"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Home</li></a>
-                    <a href="contact"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Contact</li></a>
-                    <a href="signUp.php"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Sign Up</li></a>
-                    <a href="about"><li class="m-4  mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">About</li></a>
+                    <a href="<?php echo ROOT?>/home"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Home</li></a>
+                    <a href="<?php echo ROOT?>/contact"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Contact</li></a>
+                    <a href="<?php echo ROOT?>/signUp"><li class="m-4 mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">Sign Up</li></a>
+                    <a href="<?php echo ROOT?>/about"><li class="m-4  mouse:hover:text-red-500 mouse:hover:underline mouse:hover:underline-offset-4">About</li></a>
                 </ul>
             </nav>
         </div>

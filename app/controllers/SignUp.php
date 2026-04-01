@@ -11,7 +11,7 @@ class SignUp extends Controller{
             $user= new User();
             $user->setName($_POST['name']);
             $user->setEmail($_POST['email']);
-            $user->setPassword($_POST['password']);
+            $user->setPassword(password_hash($_POST['password'],PASSWORD_BCRYPT));//store hashed password
             $user->setRole('user');    
             $found=$user->findById('email', $user->getEmail(),'user');  
             if($found){//user already stored in database

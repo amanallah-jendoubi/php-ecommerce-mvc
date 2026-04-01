@@ -37,8 +37,19 @@ class User{
         $this->role = $role;
     }
 
+    public function findUser($email,$password){
+        $query = "SELECT role, password FROM user WHERE email = ?";
+        $res = $this->query($query, [$email]);
+        if (!empty($res)){//correct email
+            $user = $res[0]; 
+            if (password_verify($password, $user->password)){
+                $this->setRole($user->role);
+                return true;
+            }
+        }
+        else{
+            return false;
+        }
 
-
-
-
+}
 }

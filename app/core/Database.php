@@ -16,8 +16,7 @@ Trait DATABASE{
         $check=$stm->execute($data);
         if($check){//query run successfully 
             $result=$stm->fetchAll(PDO::FETCH_OBJ);
-            if(count($result)){
-                var_dump ($result);
+            if(count($result)){//if there is at least a row returned
                 return $result;
             }
             return [];//query not returning anything

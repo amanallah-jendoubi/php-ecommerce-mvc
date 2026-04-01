@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="flex mouse:hover:bg-gray-100 hover:cursor-pointer py-1">
                                     <img class="mr-1 w-8 h-8" src="<?php echo ROOT ?>/assets/resources/logout.png" alt="">
-                                    <a href="logout.php" class="block">Logout</a>
+                                    <a href="<?php echo ROOT?>/logout" class="block">Logout</a>
                                 </div>
                             </div>
                         </div>

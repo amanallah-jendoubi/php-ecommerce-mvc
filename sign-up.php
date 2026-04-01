@@ -72,7 +72,7 @@
 </head>
 <body>
     <?php 
-    include 'header.php';
+    include 'header.php'; 
     ?>
     <main>
     <div class="sm:flex sm:justify-between">

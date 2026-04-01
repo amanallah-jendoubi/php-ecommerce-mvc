@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Allow actual files and directories to load directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything else through index.php
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

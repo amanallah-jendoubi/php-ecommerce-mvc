@@ -29,37 +29,37 @@
             </div>
             <h2 class="text-2xl font-bold mb-5">Browse By Category</h2>
             <div class="grid justify-items-center grid-rows-2 grid-cols-3 gap-y-8 gap-x-9 lg:w-[60%] mx-auto">
-                <a href="<?php echo ROOT; ?>/categories/electronics.php">
+                <a href="<?php echo ROOT; ?>/electronics">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]">
                         <img src="<?php echo ROOT; ?>/assets/resources/electronics.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Electronics</p>
                     </div>
                 </a>
-                <a href="<?php echo ROOT; ?>/categories/furniture.php">
+                <a href="<?php echo ROOT; ?>/furniture">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]" >
                         <img src="<?php echo ROOT; ?>/assets/resources//living.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Furniture</p>
                     </div>
                 </a>
-                <a href="<?php echo ROOT; ?>/categories/furniture.php">
+                <a href="<?php echo ROOT; ?>/clothing">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]">
                         <img src="<?php echo ROOT; ?>/assets/resources/clothing.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Clothing</p>
                     </div>
                 </a>
-                <a href="<?php echo ROOT; ?>/categories/sports.php">
+                <a href="<?php echo ROOT; ?>/sports">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]">
                         <img src="<?php echo ROOT; ?>/assets/resources/sports-logo.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Sports</p>
                     </div>
                 </a>
-                <a href="<?php echo ROOT; ?>/categories/groceries.php">
+                <a href="<?php echo ROOT; ?>/groceries">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]">
                         <img src="<?php echo ROOT; ?>/assets/resources/groceries.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Groceries</p>
                     </div>
                 </a>
-                <a href="<?php echo ROOT; ?>/categories/toys.php">
+                <a href="<?php echo ROOT; ?>/toys">
                     <div class="p-1 mouse:hover:ring-2 mouse:hover:ring-[#DB4444]">
                         <img src="<?php echo ROOT; ?>/assets/resources/toys.png" alt="">
                         <p class="text-sm font-semibold text-center mt-1">Toys</p>

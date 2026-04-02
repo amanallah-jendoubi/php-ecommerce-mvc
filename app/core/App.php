@@ -5,6 +5,7 @@
 class App{
     private $controller='Home';
     private $method ='index';//method defaulted to index
+    private $args=[];
     private function splitURL(){
         $URL= $_GET['url'] ?? 'home' ;
         $URL= explode("/",$URL);
@@ -28,7 +29,10 @@ class App{
         //method passed in URL
         if (isset($URL[1]) && method_exists($controller,$URL[1])){
             $this->method=$URL[1];
+            if (isset($URL[2])){
+                $this->args=array($URL[2]);
+            }
         }
-        call_user_func_array([$controller,$this->method],[]);
+        call_user_func_array([$controller,$this->method],$this->args);
     }
 }

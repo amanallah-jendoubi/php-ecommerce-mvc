@@ -58,7 +58,7 @@
                     <div class="flex justify-center items-center mt-10">
                         <button type="submit" class="bg-orange-500 hover:bg-orange-600 p-3 px-5 rounded-full text-sm text-white md:text-base ">Create Account</button>
                     </div>
-                    <a href="login"><p class="text-center mt-4 text-gray-600 mouse:hover:underline">Already have account? Log In</p></a>
+                    <a href="<?php echo ROOT ?>/login"><p class="text-center mt-4 text-gray-600 mouse:hover:underline">Already have account? Log In</p></a>
                 </form>
             </div>     
         </div> 

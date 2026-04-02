@@ -19,7 +19,12 @@
                     <input class=" bg-gray-100 focus:outline-none focus:ring-1 focus:ring-black shadow-md rounded-full p-2 pl-11 mx-auto w-[90%]" type="text" id="search" name="search" placeholder="Search">
                 </label>
                 <div class="flex justify-center items-center">
-                        <a  class="js-cart-link relative p-2 mr-2" href="cart"><img src="<?php echo ROOT ?>/assets/resources/Cart1 with buy.png" alt="shop"><div class="js-cart-counter hidden absolute rounded-full bg-orange-500 text-white w-5 h-5 top-0 right-0"></div></a>
+                        <a  class="js-cart-link relative p-2 mr-2" href="cart">
+                            <img src="<?php echo ROOT ?>/assets/resources/Cart1 with buy.png" alt="shop">
+                            <div class="js-cart-counter flex justify-center <?php  if($_SESSION['cart']['count']==0) echo  'hidden' ?> absolute rounded-full bg-orange-500  text-white w-6 h-6 top-0 right-0">
+                                <p><?php echo $_SESSION['cart']['count'] ?></p>
+                            </div>
+                        </a>
                     <?php if(!empty($path)):?>
                         <div class="relative">
                             <img class="js-account w-9 h-9" src="<?php echo $path ?>" alt="">

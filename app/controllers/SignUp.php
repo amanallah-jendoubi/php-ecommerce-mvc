@@ -2,7 +2,6 @@
 
 class SignUp extends Controller{
     function index(){
-        echo $_GET['url'];
         $this->view('sign-up');
     }
     function register(){
@@ -23,6 +22,7 @@ class SignUp extends Controller{
                 $_SESSION['email']=$user->getEmail();
                 $_SESSION['role']=$user->getRole();
                 $_SESSION['name']=$user->getName();
+                $_SESSION['cart']=['count'=>0];
                 header("Location:". ROOT ."/home");
                 exit;
             }

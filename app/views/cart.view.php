@@ -47,6 +47,12 @@
                 <p class="js-product-subtotal w-[20%] text-center">$650</p>
             </div>
         </div>
+
+
+
+
+
+        
         <div class="w-[60%] mx-auto border border-black bg-white mt-20 p-6 rounded-lg">
             <h3 class="text-center font-semibold text-xl mb-1">Cart Total</h3>
             <div class="bordeer border-b-2 border-gray-300 flex justify-between">

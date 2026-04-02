@@ -55,4 +55,5 @@
             </nav>
         </div>
     </header>
+    <script src="<?php echo ROOT; ?>/assets/js/header.js"></script>
 

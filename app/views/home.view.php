@@ -211,7 +211,6 @@
 <?php 
 include 'footer.view.php';
 ?>
-    <script src="<?php echo ROOT; ?>/assets/js/header.js"></script>
     <script src="<?php echo ROOT; ?>/assets/js/index.js"></script>
 </body>
 </html>

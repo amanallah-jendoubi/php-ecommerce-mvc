@@ -23,24 +23,24 @@
     ?>
     <main class="w-[95%] mx-auto grid gap-3 grid-cols-2 sm:grid-cols-3 xl:grid-cols-4">
         <?php foreach ($data as $product): ?>
-        <div>
-            <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
-                <img class="max-w-[100%] object-cover mx-auto"  src="<?php echo ROOT; ?>/assets/resources/categories/<?php echo $product->category_code.'/'.$product->id?>.jpg" alt="">
-                <div class="js-heart">
-                <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="<?php echo ROOT; ?>/assets/resources/whitre-heart.png" alt="">
+                <div class="relative w-[100%] mx-auto bg-gray-50 rounded-md">
+                    <div class="js-heart">
+                        <img class="js-white-heart absolute top-[3%] right-[2%] h-5 w-5 md:w-6 md:h-6" src="<?php echo ROOT; ?>/assets/resources/whitre-heart.png" alt="">
+                    </div>
+                    <a href="<?php echo ROOT.'/'.$product->category_name.'/product/'.$product->id ?> ">
+                        <img class="max-w-[100%] object-cover mx-auto"  src="<?php echo ROOT; ?>/assets/resources/categories/<?php echo $product->category_code.'/'.$product->id?>.jpg" alt="">
+                        <h3><?php echo $product->name ?></h3>
+                        <div class="flex">
+                            <p class="mr-4"><?php echo $product->price ?></p>
+                        </div>
+                        <div>
+                            <div class="flex gap-x-1">
+                                <img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt="">
+                            </div>
+                            <p>(65)</p>//count people
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <h3><?php echo $product->name ?></h3>
-            <div class="flex">
-                <p class="mr-4"><?php echo $product->price ?></p>
-            </div>
-            <div>
-                <div class="flex gap-x-1">
-                    <img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt=""><img src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt="">
-                </div>
-                <p>(65)</p>//count people
-            </div>
-        </div>
         <?php endforeach; ?>
     </main>
     <?php 

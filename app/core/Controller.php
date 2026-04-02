@@ -3,7 +3,6 @@
 
 class Controller{
 
-
     public function identifyUser(){
         if (isset($_SESSION['role']) && $_SESSION['role']=='user'){
             if(file_exists(ROOT_SERVER."/profile-images/users/".$_SESSION['email'].".png")){

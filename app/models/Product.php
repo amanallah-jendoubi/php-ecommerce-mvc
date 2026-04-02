@@ -19,7 +19,12 @@ class Product {
         $res = $this->query($query, [$this->id]);
         return $res;
     }
-
+    public function fetchProducts($data){
+        $placeholders = implode(',', array_fill(0, count($data), '?'));
+        $query = "SELECT * FROM product WHERE id IN ($placeholders)";
+        $res = $this->query($query, array_keys($data));
+        return $res;
+    }
 
 
 

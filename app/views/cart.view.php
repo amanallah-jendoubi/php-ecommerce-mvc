@@ -31,21 +31,26 @@
                 <h3 class="w-[20%] text-center">Quantity</h3>
                 <h3 class="w-[20%] text-center">Subtotal</h3>
             </div>
+
+            <?php foreach($data as $product) :?>
             <div class="flex justify-between items-center bg-white shadow-lg ">
                 <div class="flex flex-col w-[20%]">
-                    <img class="block ml-3" src="./assets/resources/lcd-monitor.jpg" alt="">
-                    <p class="text-center">LCD Monitor</p>
+                    <img class="block ml-3" src="<?php echo ROOT; ?>/assets/resources/categories/<?php echo $product->category_code.'/'.$product->id?>.jpg" alt="">
+                    <p class="text-center"><?php echo $product->name ?></p>
                 </div>
-                <p class="js-product-price w-[20%] text-center">$650</p>
+                <p class="js-product-price w-[20%] text-center"><?php echo '$'.$product->price ?></p>
                 <div class="w-[20%] ">
                     <div class="js-product-quantity lg:w-[80%] lg:mx-auto flex justify-between items-center ring-2 ring-[#DB4444] rounded-full p-1 lg:p-2">
                         <img class="js-delete h-5 w-5 lg:h-7 lg:w-7 mouse:hover:cursor-pointer" src="./assets/resources/garbage.png" alt="">
-                        <p class="js-quantity font-semibold">1</p>
+                        <p class="js-quantity font-semibold"><?php echo $_SESSION['cart']['products'][$product->id]?></p>
                         <img class="js-plus h-5 w-5 lg:h-7 lg:w-7 mouse:hover:cursor-pointer" src="./assets/resources/plus.png" alt="">
                     </div>
                 </div>
                 <p class="js-product-subtotal w-[20%] text-center">$650</p>
             </div>
+
+            <?php endforeach ?>
+
         </div>
 
 

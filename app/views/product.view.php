@@ -25,7 +25,7 @@
     <main class="w-[95%] md:w-[85%] md:flex  mx-auto ">
         <img class="block w-[50%] mx-auto object-contain md:mx-0" src="<?php echo ROOT.'/assets/resources/categories/'.$data[0]->category_code.'/'.$data[0]->id.'.jpg' ?>" alt="">
         <div>
-            <h1 class ='font-semibold'><?php echo $data[0]->name ?></h1>
+            <h1 class =' js-product-name font-semibold'><?php echo $data[0]->name ?></h1>
             <div class ="flex">
                 <div class="flex gap-x-1 mr-5">
                     <img class="object-contain" src="<?php echo ROOT; ?>/assets/resources/fullStar.png" alt="">
@@ -33,7 +33,7 @@
                 <p>(150 Reviews)</p>
             </div>
             <?php echo $data[0]->quantity > 0 ?"<p class='text-green-600'>In Stock</p>" :  "<p class='text-red-600'>Not Available</p>" ?>
-            <p class="font-medium"><?php echo '$'.$data[0]->price ?></p>
+            <p class=" js-product-name font-medium"><?php echo '$'.$data[0]->price ?></p>
             <p><?php echo $data[0]->description ?></p>
             <div class="flex mt-2">
                 <p class="mr-3">Quantiy:</p>

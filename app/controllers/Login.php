@@ -15,6 +15,7 @@ class Login extends Controller{
                 $found=$user->findUser($user->getEmail(),$user->getPassword());
                 if($found){
                     $_SESSION['email']=$user->getEmail();
+                    $_SESSION['cart']=['count'=>0,'prducts'=>[]];
                     if($user->getRole()=='admin'){
                         $_SESSION['role']='admin';
                         header('location:'.ROOT.'/adminSpace');

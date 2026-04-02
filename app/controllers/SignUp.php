@@ -22,7 +22,7 @@ class SignUp extends Controller{
                 $_SESSION['email']=$user->getEmail();
                 $_SESSION['role']=$user->getRole();
                 $_SESSION['name']=$user->getName();
-                $_SESSION['cart']=['count'=>0];
+                $_SESSION['cart']=['count'=>0,'prducts'=>[]];
                 header("Location:". ROOT ."/home");
                 exit;
             }

@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="flex flex-col mb-3 ">
-                    <label class="mb-1 font-medium" for="">Email</label>
+                    <label class="mb-1 font-medium" for="">Subject</label>
                     <input type="text" class="focus:outline-none ring-1 ring-orange-500 p-2 rounded-md">
                 </div>
 

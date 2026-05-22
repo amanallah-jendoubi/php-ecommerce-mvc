@@ -39,10 +39,10 @@
                     <p class="text-center"><?php echo $product->name ?></p>
                 </div>
                 <p class="js-product-price w-[20%] text-center"><?php echo '$'.$product->price ?></p>
-                <div class="w-[20%] ">
-                    <div class="js-product-quantity lg:w-[80%] lg:mx-auto flex justify-between items-center ring-2 ring-[#DB4444] rounded-full p-1 lg:p-2">
+                <div class=" js-product w-[20%] ">
+                    <div class="lg:w-[80%] lg:mx-auto flex justify-between items-center ring-2 ring-[#DB4444] rounded-full p-1 lg:p-2">
                         <img class="js-delete h-5 w-5 lg:h-7 lg:w-7 mouse:hover:cursor-pointer" src="./assets/resources/garbage.png" alt="">
-                        <p class="js-quantity font-semibold"><?php echo $_SESSION['cart']['products'][$product->id]?></p>
+                        <p class="js-product-quantity font-semibold"><?php echo $_SESSION['cart']['products'][$product->id]?></p>
                         <img class="js-plus h-5 w-5 lg:h-7 lg:w-7 mouse:hover:cursor-pointer" src="./assets/resources/plus.png" alt="">
                     </div>
                 </div>

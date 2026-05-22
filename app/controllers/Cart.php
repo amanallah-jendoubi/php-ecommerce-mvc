@@ -25,7 +25,8 @@ class Cart extends Controller{
         }
         echo json_encode([
             'success' => true,
-            'count' => $_SESSION['cart']['count']
+            'count' => $_SESSION['cart']['count'],
+            'productQuantity' =>$_SESSION['cart']['products'][$body['productId']]
         ]);
     }
 }

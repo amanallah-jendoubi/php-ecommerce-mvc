@@ -21,7 +21,7 @@
                 <div class="flex justify-center items-center">
                         <a  class="js-cart-link relative p-2 mr-2" href="<?php echo ROOT?>/cart">
                             <img src="<?php echo ROOT ?>/assets/resources/Cart1 with buy.png" alt="shop">
-                            <div class="js-cart-counter flex justify-center <?php  if($_SESSION['cart']['count']==0) echo  'hidden'; ?> absolute rounded-full bg-orange-500  text-white w-6 h-6 top-0 right-0">
+                            <div class="js-cart-counter flex justify-center <?php  if (!isset($_SESSION['cart']['count']) or ($_SESSION['cart']['count'] == 0)) echo  'hidden'; ?> absolute rounded-full bg-orange-500  text-white w-6 h-6 top-0 right-0">
                                 <p><?php  if (isset($_SESSION ['cart']['count'])) echo $_SESSION ['cart']['count'] ?></p>
                             </div>
                         </a>

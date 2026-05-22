@@ -20,7 +20,6 @@
 <body>
 
     <?php 
- 
     include 'header.view.php';
     ?>
     <main>
@@ -29,7 +28,7 @@
             <div class="md:w-[70%] lg:w-[50%]">
                 <h1 class="text-center font-semibold text-2xl mb-8">Edit your profile</h1>
                 <div class="flex justify-center items-center">
-                    <img class="max-w-[100%]" src="<?php echo ROOT;?>/assets/resources/user200.png" alt="">
+                    <img  class="max-w-[100%]" src="<?php echo ROOT_SERVER;?>/profile-images/users/user.png" alt="">
                 </div>
                 <form action="<?php echo ROOT ?>/account/modify" method="post">
                     <div class="flex flex-col mb-3 ">
